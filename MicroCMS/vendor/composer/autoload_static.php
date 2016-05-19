@@ -21,6 +21,15 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
             'Symfony\\Component\\Debug\\' => 24,
             'Silex\\' => 6,
         ),
+        'M' => 
+        array (
+            'MicroCMS\\' => 9,
+        ),
+        'D' => 
+        array (
+            'Doctrine\\Common\\Cache\\' => 22,
+            'Doctrine\\Common\\' => 16,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -52,6 +61,18 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
         array (
             0 => __DIR__ . '/..' . '/silex/silex/src/Silex',
         ),
+        'MicroCMS\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+        'Doctrine\\Common\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/cache/lib/Doctrine/Common/Cache',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/lib/Doctrine/Common',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -64,6 +85,29 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
             'Pimple' => 
             array (
                 0 => __DIR__ . '/..' . '/pimple/pimple/lib',
+            ),
+        ),
+        'D' => 
+        array (
+            'Doctrine\\DBAL\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/dbal/lib',
+            ),
+            'Doctrine\\Common\\Lexer\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/lexer/lib',
+            ),
+            'Doctrine\\Common\\Inflector\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/inflector/lib',
+            ),
+            'Doctrine\\Common\\Collections\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/collections/lib',
+            ),
+            'Doctrine\\Common\\Annotations\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/doctrine/annotations/lib',
             ),
         ),
     );
