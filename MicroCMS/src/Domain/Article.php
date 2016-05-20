@@ -48,4 +48,5 @@ class Article
     public function setContent($content) {
         $this->content = $content;
     }
+
 }
