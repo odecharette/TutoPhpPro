@@ -2,6 +2,7 @@
 
 use Symfony\Component\Debug\ErrorHandler;
 use Symfony\Component\Debug\ExceptionHandler;
+use Symfony\Component\HttpFoundation\Request;	// Pour les API en POST
 
 // Register global error and exception handlers
 ErrorHandler::register();
@@ -83,4 +84,12 @@ $app->error(function (\Exception $e, $code) use ($app) {
             $message = "Something went wrong.";
     }
     return $app['twig']->render('error.html.twig', array('message' => $message));
+});
+
+// Register JSON data decoder for JSON requests - pour les API en POST
+$app->before(function (Request $request) {
+    if (0 === strpos($request->headers->get('Content-Type'), 'application/json')) {
+        $data = json_decode($request->getContent(), true);
+        $request->request->replace(is_array($data) ? $data : array());
+    }
 });
