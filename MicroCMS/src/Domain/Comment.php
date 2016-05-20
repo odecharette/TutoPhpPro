@@ -44,7 +44,7 @@ class Comment
         return $this->author;
     }
 
-    public function setAuthor($author) {
+    public function setAuthor(User $author) {
         $this->author = $author;
     }
 
