@@ -24,6 +24,7 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Validator\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
+            'Symfony\\Component\\Stopwatch\\' => 28,
             'Symfony\\Component\\Security\\' => 27,
             'Symfony\\Component\\Routing\\' => 26,
             'Symfony\\Component\\PropertyAccess\\' => 33,
@@ -39,11 +40,14 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Config\\' => 25,
             'Symfony\\Component\\BrowserKit\\' => 29,
+            'Symfony\\Bundle\\WebProfilerBundle\\' => 33,
             'Symfony\\Bridge\\Twig\\' => 20,
+            'Symfony\\Bridge\\Monolog\\' => 23,
             'Silex\\' => 6,
         ),
         'M' => 
         array (
+            'Monolog\\' => 8,
             'MicroCMS\\' => 9,
         ),
         'D' => 
@@ -78,6 +82,10 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
         'Symfony\\Component\\Translation\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/translation',
+        ),
+        'Symfony\\Component\\Stopwatch\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/stopwatch',
         ),
         'Symfony\\Component\\Security\\' => 
         array (
@@ -139,13 +147,25 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
         array (
             0 => __DIR__ . '/..' . '/symfony/browser-kit',
         ),
+        'Symfony\\Bundle\\WebProfilerBundle\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/web-profiler-bundle',
+        ),
         'Symfony\\Bridge\\Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/twig-bridge',
         ),
+        'Symfony\\Bridge\\Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/monolog-bridge',
+        ),
         'Silex\\' => 
         array (
             0 => __DIR__ . '/..' . '/silex/silex/src/Silex',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'MicroCMS\\' => 
         array (
@@ -182,6 +202,13 @@ class ComposerStaticInitd602ed804e3e65a02d24f8f609a33504
             'Twig_' => 
             array (
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
+        'S' => 
+        array (
+            'Silex\\Provider\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/silex/web-profiler',
             ),
         ),
         'P' => 
