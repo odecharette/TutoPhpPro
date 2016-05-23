@@ -37,7 +37,7 @@ class UserDAO extends DAO implements UserProviderInterface
      */
     public function find($id) {
         $sql = "select * from t_user where user_id=" . $id;
-        $result = $this->getDb()->fetchAssoc($sql);
+        $result = $this->getDb()->fetchAssoc($sql, array($id));
         
         // Convert result into a domain objects
         if ($result)

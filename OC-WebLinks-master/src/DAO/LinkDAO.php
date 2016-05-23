@@ -42,7 +42,7 @@ class LinkDAO extends DAO
      */
     public function find($id) {
         $sql = "select * from t_link where link_id=" . $id;
-        $result = $this->getDb()->fetchAssoc($sql);
+        $result = $this->getDb()->fetchAssoc($sql, array($id));
         
         // Convert result into a domain objects
         return $this->buildDomainObject($result);
